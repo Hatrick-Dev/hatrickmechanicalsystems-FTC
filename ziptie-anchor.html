@@ -5,19 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Universal Ziptie Anchor - HMS</title>
   <style>
-    /* Basic Page Setup (Matches your dark theme) */
+
     body { font-family: sans-serif; background-color: #0f172a; color: white; text-align: center; padding: 50px; }
     .download-btn { display: inline-block; background-color: #0ea5e9; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; cursor: pointer; }
     .download-btn:hover { background-color: #0284c7; }
-    
-    /* Amazon Links Section */
+
     .amazon-gear { margin-top: 60px; padding-top: 40px; border-top: 1px solid #334155; }
     .gear-grid { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
     .gear-item { background: #1e293b; padding: 15px; border-radius: 8px; width: 200px; text-decoration: none; color: white; border: 1px solid #334155; }
     .gear-item:hover { border-color: #0ea5e9; }
     .view-all-btn { display: inline-block; margin-top: 20px; color: #0ea5e9; text-decoration: none; font-weight: bold; }
     
-    /* The Donation Popup (Hidden by default) */
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; }
     .modal-content { background: #1e293b; padding: 30px; border-radius: 10px; width: 90%; max-width: 400px; border: 1px solid #334155; position: relative; }
     .close-btn { position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #94a3b8; }
@@ -27,19 +25,17 @@
 </head>
 <body>
 
-  <!-- Part Info -->
   <img src="HMS_uni_ziptie_anchor.png" alt="Ziptie Anchor" style="max-width: 300px; border-radius: 8px;">
   <h2>Universal Ziptie Anchor</h2>
   <p style="max-width: 600px; margin: 0 auto;">Securely anchor zip-ties and route wiring across the goBILDA M4 build system.</p>
 
-  <!-- The Actual Download Button -->
-  <!-- Note: We keep the 'download' attribute here so it actually downloads the file -->
   <a href="HMS_uni_ziptie_anchor.stl" id="realDownloadBtn" class="download-btn" download>Download STL File</a>
 
-  <!-- Amazon Recommendations Area -->
   <div class="amazon-gear">
     <h3>Essential 3D Printing Gear</h3>
     <p style="font-size: 0.9em; color: #94a3b8;">As an Amazon Associate I earn from qualifying purchases.</p>
+
+    <!-- ALL OF THE BELOW IS TO BE ADDED IN A FUTURE UPDATE
     
     <div class="gear-grid">
       <a href="YOUR_AMAZON_LINK_1" class="gear-item">eSUN PETG Filament</a>
@@ -50,7 +46,6 @@
     <a href="gear.html" class="view-all-btn">View all 3D Printing Products →</a>
   </div>
 
-  <!-- The Hidden Donation Modal -->
   <div id="thankYouModal" class="modal">
     <div class="modal-content">
       <span class="close-btn" id="closeModal">&times;</span>
@@ -60,7 +55,6 @@
     </div>
   </div>
 
-  <!-- JavaScript to trigger the popup -->
   <script>
     const downloadBtn = document.getElementById('realDownloadBtn');
     const modal = document.getElementById('thankYouModal');
@@ -84,7 +78,7 @@
         modal.style.display = 'none';
       }
     });
-  </script>
+  </script> -->
 
 </body>
 </html>

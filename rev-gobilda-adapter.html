@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REV to goBILDA Adaptor Plate - HMS</title>
+  <style>
+
+    body { font-family: sans-serif; background-color: #0f172a; color: white; text-align: center; padding: 50px; }
+    .download-btn { display: inline-block; background-color: #0ea5e9; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; cursor: pointer; }
+    .download-btn:hover { background-color: #0284c7; }
+
+    .amazon-gear { margin-top: 60px; padding-top: 40px; border-top: 1px solid #334155; }
+    .gear-grid { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
+    .gear-item { background: #1e293b; padding: 15px; border-radius: 8px; width: 200px; text-decoration: none; color: white; border: 1px solid #334155; }
+    .gear-item:hover { border-color: #0ea5e9; }
+    .view-all-btn { display: inline-block; margin-top: 20px; color: #0ea5e9; text-decoration: none; font-weight: bold; }
+    
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; }
+    .modal-content { background: #1e293b; padding: 30px; border-radius: 10px; width: 90%; max-width: 400px; border: 1px solid #334155; position: relative; }
+    .close-btn { position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #94a3b8; }
+    .close-btn:hover { color: white; }
+    .donate-btn { display: inline-block; background-color: #22c55e; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <img src="HMS_uni_ziptie_anchor.png" alt="Ziptie Anchor" style="max-width: 300px; border-radius: 8px;">
+  <h2>REV to goBILDA Adapter Plate</h2>
+  <p style="max-width: 600px; margin: 0 auto;">Seamlessly connect REV Robotics M3 hardware to the goBILDA M4 build system. A must-have utility plate for mixed-hardware robots.</p>
+
+  <a href="HMS_uni_ziptie_anchor.stl" id="realDownloadBtn" class="download-btn" download>Download STL File</a>
+
+<!-- ALL OF THE BELOW IS TO BE ADDED IN A FUTURE UPDATE
+
+  <div class="amazon-gear">
+    <h3>Essential 3D Printing Gear</h3>
+    <p style="font-size: 0.9em; color: #94a3b8;">As an Amazon Associate I earn from qualifying purchases.</p>
+    
+    <div class="gear-grid">
+      <a href="YOUR_AMAZON_LINK_1" class="gear-item">eSUN PETG Filament</a>
+      <a href="YOUR_AMAZON_LINK_2" class="gear-item">Metric Hex Driver Set</a>
+      <a href="YOUR_AMAZON_LINK_3" class="gear-item">M3/M4 Hardware Kit</a>
+    </div>
+    
+    <a href="gear.html" class="view-all-btn">View all 3D Printing Products →</a>
+  </div>
+
+  <div id="thankYouModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h3>Thank You for Downloading!</h3>
+      <p>HMS parts will always be free. If this part saved your team some time, consider leaving a tip to support server costs!</p>
+      <a href="YOUR_DONATION_LINK" class="donate-btn">Support the Project</a>
+    </div>
+  </div>
+
+  <script>
+    const downloadBtn = document.getElementById('realDownloadBtn');
+    const modal = document.getElementById('thankYouModal');
+    const closeBtn = document.getElementById('closeModal');
+
+    // When they click download, start the download, wait 1 second, then show the popup
+    downloadBtn.addEventListener('click', function() {
+      setTimeout(() => {
+        modal.style.display = 'flex';
+      }, 1000); 
+    });
+
+    // Close the popup when the X is clicked
+    closeBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+    });
+
+    // Close the popup if they click outside the box
+    window.addEventListener('click', function(event) {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script> -->
+
+</body>
+</html>
